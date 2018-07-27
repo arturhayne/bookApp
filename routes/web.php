@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('appointments/{token}/{date}/{param}','AppointmentsController@showFreeSlots');
+Route::post('appointments/{token}/{date}/{time}/{patient}','AppointmentsController@markit');
+Route::delete('appointments/{token}/{appointmentId}','AppointmentsController@deleteAppointment');
+
 Route::get('/', function () {
     return view('welcome');
 });
