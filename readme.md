@@ -9,15 +9,11 @@
 - postgres
 
 ## Development
-- composer global require "laravel/installer=~1.1"
-- chmod **777** -R storage or chmod -R +rw storage (mac)
-- chmod **777** -R bootstrap/cache or chmod -R +rw bootstrap/cache (mac)
-- cp .env.example .env
-
 - composer install
 - php artisan key:generate
 - php artisan migrate ok
 - php artisan db:seed ok
+- cp .env.example .env
 
 ##Run
 - php artisan serve --port=5000
