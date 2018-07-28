@@ -29,7 +29,7 @@ The system is responsible for scheduling medical appointments over the internet.
 
 - Get a list of free slots for a given date
 ```
-GET /v1/appointments/<token-id>/<date>/free 
+GET /api/appointments/<token-id>/<date>/free 
 ```
 
 Answer:
@@ -39,7 +39,7 @@ Answer:
 
 - Request a slot to be reserved on the date and time for the patient name
 ```
-POST /v1/appointments/<token-id>/<date>/<time>/<patient name>
+POST /api/appointments/<token-id>/<date>/<time>/<patient name>
 ```
 
 Answer:
@@ -49,7 +49,7 @@ Answer:
 - Deletes an appointment
 
 ```
-DELETE /v1/appointments/<token-id>/<appointment-id>
+DELETE /api/appointments/<token-id>/<appointment-id>
 ```
 
 Answer:
