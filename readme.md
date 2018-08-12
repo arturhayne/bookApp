@@ -9,10 +9,10 @@ The system is responsible for scheduling medical appointments over the internet.
 
 ## Development
 - composer install
+- cp .env.example .env
 - php artisan key:generate
 - php artisan migrate ok
 - php artisan db:seed ok
-- cp .env.example .env
 
 ## Run
 - php artisan serve --port=5000
